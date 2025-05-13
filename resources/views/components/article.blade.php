@@ -3,7 +3,7 @@
         <h2 class="mb-1 text-3xl font-bold tracking-tight text-gray-900">{{ $titleCard }}</h2>
     </a>
     <div class="text-base text-gray-500">
-        <a href="#">{{ $authorCard }}</a> | 1 Mei 2025
+        <a href="#">{{ $authorCard }}</a> | {{ $timeArticle }}
     </div>
     <p class="my-4 font-light">{{ Str::limit( $contentCard, 100) }}</p>
     <a href="{{ $linkHref }}" class="font-medium text-blue-500 hover:underline">Read More &raquo;</a>
