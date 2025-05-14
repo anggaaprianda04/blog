@@ -2,8 +2,9 @@
     <a href="{{ $linkHref }}" class="hover:underline hover:duration-150">
         <h2 class="mb-1 text-3xl font-bold tracking-tight text-gray-900">{{ $titleCard }}</h2>
     </a>
-    <div class="text-base text-gray-500">
-        <a href="#">{{ $authorCard }}</a> | {{ $timeArticle }}
+    <div class="text-base text-gray-500 o">
+        <a class="hover:underline" href="/authors/{{ $authorId }}">
+            By {{ $authorCard }} in {{ $categoryCard }}</a> | {{ $timeArticle }}
     </div>
     <p class="my-4 font-light">{{ Str::limit( $contentCard, 100) }}</p>
     <a href="{{ $linkHref }}" class="font-medium text-blue-500 hover:underline">Read More &raquo;</a>
